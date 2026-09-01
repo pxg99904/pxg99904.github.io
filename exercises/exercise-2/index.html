@@ -1,50 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>exercise 2</title>
-</head>
-<body>
-    <div class="canvas">
-        <div class="square-1"></div>
-        <div class="square-2"></div>
-        <div class="square-3"></div>
-    </div>
-</div>
 <style>
-    .canvas{
-        width: 100%;
-        height: 100%;
+      #holder{
+        width:500px;
+        height:500px;
+        background-color: rgb(250, 250, 250); outline: 10px solid rgb(187, 186, 186);
         position: relative;
-    }
-  .square-1{
-        width:100px;
-        height:100px;
-        background-color: rgb(195, 106, 106);
-        position: absolute;
-        left: 900px;
-        top: 0;
         z-index: 1;
     }
-    .square-2{
-        width:100px;
-        height:100px;
-        background-color: rgb(98, 143, 212);
+    #square1{
+        width:150px;
+        height:150px;
+        background-color: rgb(237, 92, 97);
         position: absolute;
-        bottom: -145px;
-        right: 290px;
+        left: 95px;
+        top: 95px;
         z-index: 2;
     }
-    .square-3{
-        width:100px;
-        height:100px;
-        background-color: rgb(100, 173, 100);
+    #square2{
+        width:150px;
+        height:150px;
+        background-color: rgb(64, 61, 169);
         position: absolute;
-        top:95px;
-        right:240px;
+        bottom: 180px;
+        right: 180px;
         z-index: 3;
     }
- </style>
+     #square3{
+        width:150px;
+        height:150px;
+        background-color: rgb(180, 197, 95);
+        position: absolute;
+        bottom: 110px;
+        right: 110px;
+        z-index: 4;
+    }
+    #center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+</style>
+</head>
+<body>
+    <div id="holder"> 
+        <div id="square1"></div>
+        <div id="square2"></div>
+        <div id="square3"></div>
 </body>
 </html>
