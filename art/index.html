@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+  box-sizing: border-box;
+}
+.img-container {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+body
+{
+  background-color: beige;
+}
+figure {
+  border: 1px #cccccc solid;
+  padding: 4px;
+  margin: auto;
+}
+
+    </style>
+</head>
+<body>
+    <div class="clearfix">
+  <div class="img-container">
+  <img src="images/swing-lady-acrylic.png" alt="woman on swing, acrylic painting" style="width:100%"> <caption>Pax's at Harrisburg Half Marathon. Finished time 1:56:xx</caption>
+  </div>
+  <div class="img-container">
+  <img src="images/cat-stars-print.png" alt="lino cat artwork with stars" style="width:100%"> <caption>Pax at her debut solo show, LancGallery, 2023</caption>
+  </div>
+  <div class="img-container">
+  <img src="images/lego-flower-acrylic-stilllife.jpg" alt="still life in acrylic, lego flower, crochet duck" style="width:100%"> <caption>Pax enjoys recreation at Raystown Lake!</caption>
+  </div>
+</div>
+</body>
+</html>
