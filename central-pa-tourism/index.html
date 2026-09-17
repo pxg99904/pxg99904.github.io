@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home-cenral-pa-tourism</title>
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+<link rel="shortcut icon" href="/favicon/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="CentralPaTourism" />
+<link rel="manifest" href="/favicon/site.webmanifest" />
+    <style>
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #29353c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  font-family: "Playfair Display", serif;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  padding: 25px 30px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #111111;
+}
+
+h1 {
+  color: #e6e6e6;
+  font-size: 20px;
+  margin: 0;
+  padding: 10px 0;
+}
+
+#top-image {
+  width: 100%;
+  display: block;
+}
+
+#top-text {
+  background: white;
+  padding: 60px 0;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+#top-text-wrapper {
+  width: 70%;
+  margin: 0 auto;
+  background: white;
+  color: #29353c;
+  text-align: center;
+  padding: 20px 20px;
+  box-sizing: border-box;
+}
+
+#top-text-wrapper h2 {
+  font-size: 60px;
+  font-family: "Playfair Display", serif;
+  margin: 0 0 20px;
+}
+
+#top-text-wrapper p {
+  font-size: 26px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #29353c;
+  margin: 0;
+  padding: 40px 20px; 
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 100px;
+  justify-content: center;
+  padding: 0px 20px 60px;
+  background: white;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: calc(33.333% - 20px);
+  min-width: 260px;
+  height: 550px;
+  border-radius: 10px;
+  padding: 20px 20px 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.title,
+.img-holder,
+.card-content,
+.link {
+  display: block;
+}
+
+.title {
+    padding: 0;
+    margin: 0;
+}
+
+.link {
+  margin-top: auto;
+}
+
+.img-holder img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-content {
+  height: 200px;
+  width: 80%;
+  overflow: hidden;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #29353c;
+}
+
+.card h3 {
+  margin-top: 15px;
+  margin-bottom: 0;
+  font-family: "Playfair Display", serif; font-size: 40px;
+  color: #29353c;
+}
+
+.card-content p {
+  margin-top: 0;
+}
+.autumn-wrapper { 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 0 0 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+.autumn-text-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+  min-width: 0;
+  padding: 20px 0px 20px 20px;
+  align-items: flex-start;
+  text-align: left;
+  width: 50%;
+  height: auto;
+  box-sizing: border-box;
+  h3 { font-size: 60px; font-family: "Playfair Display", serif; color: #29353c; margin-top: 0; margin-bottom: 20px;}
+}
+
+.autumn-text-container h3,
+.autumn-text-container p {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+}
+.autumn-text-container h3 {
+    font-size: 68px;
+}
+.autumn-text-container p {
+    font-size: 36px;
+}
+
+.autumn-photo-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+  min-width: 0;
+  padding: 20px 0 20px 20px;
+  align-items: flex-end;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.autumn-photo-container img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+  <h1>Friends of Central PA</h1>
+  <nav>
+    <ul>
+      <li><a href="#explore">Explore</a></li>
+      <li><a href="#things-to-do">Things to Do</a></li>
+      <li><a href="#plan">Plan</a></li>
+    </ul>
+  </nav>
+</header>
+<img src="../images/top-image.png" alt="Picture of scenic sunset on Raystown Lake from a boat" id="top-image">
+<div id="top-text">
+    <div id="top-text-wrapper">
+        <h2>You've Got a Friend in Pennsylvania</h2>
+        <p>Ready to go on an adventure with your old friend? Visiting Pennsylvania can’t be contained within checklist, and you won’t find an itinerary here.<br><br>It’s not what you see, but what you experience. Stop by and experience sweet corn and lush forests. Welcome to Pennsylvania, and pursue your happiness. .</p>
+      </div>
+</div>
+<div class="cards-container">
+  <div class="card">
+    <div class="img-holder">
+      <img src="../images/raystown.png" alt="" />
+    </div>
+     <div class="title"><h3>Raystown Lake</h3>
+    </div>
+    <div class="card-content">
+      <p>The largest lake contained entirely within Pennsylvania. Paddle, hike, and explore the beauty of PA.</p>
+    </div>
+    <div class="link"><a href="#">Learn More</a></div>
+  </div>
+    <div class="card">
+    <div class="img-holder">
+      <img src="../images/central-market.png" alt="" />
+    </div>
+     <div class="title"><h3>Central Market</h3>
+    </div>
+    <div class="card-content">
+      <p>USA’s oldest continuously operating farmers market located in the heart of Amish country. Est. 1730.</p>
+    </div>
+    <div class="link"><a href="#">Learn More</a></div>
+  </div>
+    <div class="card">
+    <div class="img-holder">
+      <img src="../images/pa-grand-canyon.png" alt="" />
+    </div>
+     <div class="title"><h3>PA Grand Canyon</h3>
+    </div>
+    <div class="card-content">
+      <p>Explore the vastness of the Pennsylvania woods, and the beauty of the stars.</p>
+    </div>
+    <div class="link"><a href="#">Learn More</a></div>
+  </div>
+    <div class="card">
+    <div class="img-holder">
+      <img src="../images/raystown.png" alt="" />
+    </div>
+     <div class="title"><h3>Card Title</h3>
+    </div>
+    <div class="card-content">
+      <p>Description goes here.</p>
+    </div>
+    <div class="link"><a href="#">View Site</a></div>
+  </div>
+    <div class="card">
+    <div class="img-holder">
+      <img src="../images/central-market.png" alt="" />
+    </div>
+     <div class="title"><h3>Card Title</h3>
+    </div>
+    <div class="card-content">
+      <p>Description goes here.</p>
+    </div>
+    <div class="link"><a href="#">View Site</a></div>
+  </div>
+    <div class="card">
+    <div class="img-holder">
+      <img src="../images/pa-grand-canyon.png" alt="" />
+    </div>
+     <div class="title"><h3>Card Title</h3>
+    </div>
+    <div class="card-content">
+      <p>Description goes here.</p>
+    </div>
+    <div class="link"><a href="#">View Site</a></div>
+  </div>
+    <div class="autumn-wrapper">
+        <div class="autumn-text-container">
+            <h3>Autumn in<br>Pennsylvania</h3>
+            <p>A sight you need to see to believe.<br>Pennsylvania’s Fall Foliage Forecast,<br>best places to view, and more.</p>
+        </div>
+        <div class="autumn-photo-container">
+            <img src="../images/autumn-tab.png" alt="Autumn in Pennsylvania Forest inside somputer tab" />
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
