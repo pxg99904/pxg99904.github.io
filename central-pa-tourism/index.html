@@ -22,7 +22,19 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
-  font-family: "Playfair Display", serif;
+  font-family: "Goudy Bookletter 1911", serif;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-logo {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
 }
 
 nav ul {
@@ -37,6 +49,7 @@ nav li a {
   color: white;
   padding: 25px 30px;
   text-decoration: none;
+  font-family: "Didact Gothic", sans-serif;
 }
 
 nav li a:hover {
@@ -75,15 +88,15 @@ h1 {
 }
 
 #top-text-wrapper h2 {
-  font-size: 60px;
-  font-family: "Playfair Display", serif;
+  font-size: 75px;
+  font-family: "Goudy Bookletter 1911", serif;
   margin: 0 0 20px;
 }
 
 #top-text-wrapper p {
-  font-size: 26px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #29353c;
+  font-size: 32px;
+  font-family: "Didact Gothic", sans-serif;
+   color: #646464;
   margin: 0;
   padding: 40px 20px; 
 }
@@ -148,12 +161,13 @@ h1 {
 .card h3 {
   margin-top: 15px;
   margin-bottom: 0;
-  font-family: "Playfair Display", serif; font-size: 40px;
+  font-family: "Goudy Bookletter 1911", serif; font-size: 40px;
   color: #29353c;
 }
 
 .card-content p {
   margin-top: 0;
+  font-family: "Didact Gothic", sans-serif;
 }
 .autumn-wrapper { 
   display: flex;
@@ -168,13 +182,13 @@ h1 {
   flex-direction: column;
   flex: 1 1 0;
   min-width: 0;
-  padding: 20px 0px 20px 20px;
+  padding: 0px 0px 20px 20px;
   align-items: flex-start;
   text-align: left;
   width: 50%;
   height: auto;
   box-sizing: border-box;
-  h3 { font-size: 60px; font-family: "Playfair Display", serif; color: #29353c; margin-top: 0; margin-bottom: 20px;}
+  h3 { font-size: 60px; font-family: "Goudy Bookletter 1911", serif; color: #29353c; margin-top: 0; margin-bottom: 0px;}
 }
 
 .autumn-text-container h3,
@@ -183,12 +197,17 @@ h1 {
   max-width: 100%;
   box-sizing: border-box;
   overflow-wrap: break-word;
+   font-family: "Didact Gothic", sans-serif;
+   padding-left: 10%;
 }
 .autumn-text-container h3 {
-    font-size: 68px;
+    font-size: 74px;
+    font-family: "Goudy Bookletter 1911", serif; color: #29353c;
+    
 }
 .autumn-text-container p {
-    font-size: 36px;
+    font-size: 36px; font-family: "Didact Gothic", sans-serif;
+    color: #646464;
 }
 
 .autumn-photo-container {
@@ -210,11 +229,15 @@ h1 {
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Goudy+Bookletter+1911&display=swap" rel="stylesheet">
+
 </head>
 <body>
 <header>
-  <h1>Friends of Central PA</h1>
+  <div class="brand">
+    <img class="brand-logo" src="../favicon/favicon-96x96.png" alt="Friends of Central PA logo">
+    <h1>Friends of Central PA</h1>
+  </div>
   <nav>
     <ul>
       <li><a href="#explore">Explore</a></li>
