@@ -37,7 +37,8 @@
         color: white;
         padding: 25px 30px;
         text-decoration: none;
-        font-family: "Didact Gothic", sans-serif;
+        font-family: "Instrument Serif", serif;
+        font-size: 25px;
         }
 
         nav li a:hover {
@@ -45,9 +46,21 @@
         }
         h1 {
         color: #e6e6e6;
-        font-size: 20px;
+        font-size: 35px;
         margin: 0;
-        padding: 10px 0;
+        padding: 5px 0;
+        }
+        h1,h2,h3{
+            font-family: "Instrument Serif", serif;
+        }
+        h2,h3{
+            font-size: 40px;
+        }
+        p{
+          font-family: "Oswald", sans-serif;
+        }
+        h2{
+            font-size: 80px;
         }
         body {
         margin: 0;
@@ -56,9 +69,8 @@
         main {
           box-sizing: border-box;
           width: 100%;
-          max-width: 1100px;
-          margin: 0 auto;
-          padding: 40px 24px;
+          margin: 0;
+          padding: 0;
         }
         img {  
           max-width: 100%;
@@ -66,51 +78,104 @@
         }
         .flex {
           display: flex;
-          align-items: center;
-          gap: 30px;
+          align-items: stretch;
+          gap: 40px;
         }
         .flex > div:first-child {
-          flex: 0 1 500px;
+          flex: 0 0 50%;
+          height: 70vh;
+          overflow: hidden;
+          padding-top: 20px;
         }
         .flex > div:last-child {
           flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          box-sizing: border-box;
+          padding: clamp(24px, 4vw, 48px);
+        }
+        .flex > div:last-child h2 {
+          margin: 0 0 12px;
+        }
+        .flex > div:last-child p {
+          margin: 0;
         }
         .flex img {
           display: block;
           width: 100%;
-          max-width: 500px;
+          height: 100%;
+          max-width: none;
+          object-fit: cover;
+          border-radius: 0 25px 25px 0;
+          
         }
-        @media (max-width: 500px) {
+        @media (max-width: 700px) {
           .flex {
             flex-direction: column;
+            gap: 24px;
           }
-          .flex > div:first-child,
+          .flex > div:first-child {
+            flex: initial;
+            width: 100%;
+            height: 55vh;
+            min-height: 300px;
+          }
           .flex > div:last-child {
             flex: initial;
             width: 100%;
-            }
+            padding: 24px;
+          }
         }
         .flex-container{
             display: flex;
             gap: 20px;
-            padding-top: 20px;
+          margin-top: 40px;
         }
         .column {
             flex: 1;
-            padding: 15px;
+            padding: 20px;
             
         }
-        @media (max-width: 600px) {
+        .column h3 {
+          margin: 0 0 8px;
+        }
+        .column p {
+          margin: 0;
+        }
+        @media (max-width: 700px) {
         .flex-container {
         flex-direction: column;
         }
         }
+        .instrument-serif-regular {
+        font-family: "Instrument Serif", serif;
+        font-weight: 400;
+        font-style: normal;
+        }
+
+        .instrument-serif-regular-italic {
+        font-family: "Instrument Serif", serif;
+        font-weight: 400;
+        font-style: italic;
+        }
+
+        .oswald-text {
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 200;
+        font-style: normal;
+        }
+        
     </style>
 <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="shortcut icon" href="/favicon.ico" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 <link rel="manifest" href="/site.webmanifest" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -127,27 +192,31 @@
 <main>
     <div class="flex">
         <div>
-            <img src="../../images/cat-stars-print.png" alt="Cat playing with stars linocut print">
+            <img src="../../images/harrisburg-half-marathon.png" alt="Woman running during harrisburg half marathon">
         </div>
         <div>
+            <h2>
+                Best and Worst Running Shoes (to me).
+            </h2>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos iusto, ips<br>sint consectetur aspernatur dicta architecto quisquam omnis blanditiis<br>harum fuga nisi recusandae. Molestias, explicabo tenetur mollitia officia eos ipsum!
+              No one asked but I shall deliver. Unsolicited shoe advice may be the best shoe advice. Don't waste your money on bad shoes. Invest in things that seperate you from the ground; I.E: tires, bed, and shoes. Also go to your local running store and get fit because 85% of people wear shoes that are too small.
             </p>
         </div>
     </div>
 </main>
 <div class="flex-container">
   <div class="column">
-    <h3>Column 1</h3>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur dolorum amet repudiandae quam voluptate aliquid sint quidem? Soluta nulla praesentium perferendis fugit? Maxime, harum? Perferendis rerum distinctio exercitationem atque vero?.</p>
+    <h3>Asics</h3>
+    <p>Novablast 5: Hurt me 1/10<br>Magic Speed 4: Best shoe ever perfect for race day 11/10 </p>
   </div>
   <div class="column">
-    <h3>Column 2</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quisquam aliquam, nesciunt quod dolor autem laudantium hic non, rem consequuntur repellendus laboriosam optio. Rerum, ex aliquam sint ad esse possimus?</p>
+    <h3>Saucony</h3>
+    <p>Endorphin Azura: Chefs kiss. Amazing daily trainer. 12/10<br>Echelon 10: Good daily trainer for wide feet. Kinda lame tho. 6/10.
+    </p>
   </div>
   <div class="column">
-    <h3>Column 3</h3>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil numquam beatae aperiam enim placeat laborum veritatis non perferendis, vitae vel dicta et vero doloremque doloribus quas nesciunt deserunt sunt commodi.</p>
+    <h3>Brooks</h3>
+    <p>Glycerin Max: Mileage eater but also a brick. Good for half marathon training though. 6.5/10.<br>Hyperion Max 3&4: Literally blister machines for me. Ran my fastest 5k in v3 though. 6/10.</p>
   </div>
 </div>
 
