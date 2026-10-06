@@ -1,24 +1,24 @@
     :root {
-      --icon-heading-gap: 45px;
-    }
+        --icon-heading-gap: 45px;
+        }
 
-    *,
-    *::before,
-    *::after {
-      box-sizing: border-box;
-    }
+        *,
+        *::before,
+        *::after {
+        box-sizing: border-box;
+        }
 
-    h1, h2, h5{
-      font-family: "Instrument Serif", serif;
-    }
- 
-    p, h3 {
-      font-family: "Encode Sans", sans-serif;
-    }
+        h1, h2, h5{
+        font-family: "Instrument Serif", serif;
+        }
+    
+        p, h3 {
+        font-family: "Encode Sans", sans-serif;
+        }
 
-    p {
-      color: lightslategray;
-    }
+        p {
+        color: lightslategray;
+        }
 
         body {
         margin: 0;
@@ -70,7 +70,7 @@
         }
 
         nav li a:hover {
-        background-color: #111111;
+        background-color: #a04115;
         }
 
         h1 {
@@ -470,4 +470,10 @@
           font-family: "Encode Sans", sans-serif;
           text-decoration: none;
           text-align: center;
+        }
+        .nav-link.active {
+         color: #111111;
+        font-weight: bold;
+        display: block;
+        padding: 25px 30px;
         }
