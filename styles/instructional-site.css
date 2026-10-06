@@ -2,6 +2,12 @@
       --icon-heading-gap: 45px;
     }
 
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
     h1, h2, h5{
       font-family: "Instrument Serif", serif;
     }
@@ -333,6 +339,121 @@
           .scan-step-4-image-placeholder{
             flex: 0 0 auto;
             aspect-ratio: 4 / 3;
+          }
+        }
+
+        @media (max-width: 600px){
+          header{
+            flex-wrap: wrap;
+            padding: 0 12px;
+          }
+          .brand{
+            min-height: 60px;
+          }
+          h1{
+            font-size: 21px;
+          }
+          nav{
+            width: 100%;
+          }
+          nav li a{
+            padding: 14px 16px;
+          }
+          .top-container{
+            margin-top: 24px;
+            margin-bottom: 40px;
+            padding: 0 16px;
+          }
+          .archive-text{
+            width: 100%;
+            padding: 12px 0;
+          }
+          h2{
+            font-size: 44px;
+            line-height: 1.05;
+            margin: 12px 0 20px;
+            overflow-wrap: anywhere;
+          }
+          .archive-text p{
+            font-size: 18px;
+            line-height: 1.5;
+          }
+          .initial-steps-container,
+          .methods-container{
+            width: calc(100% - 32px);
+          }
+          .initial-steps-container{
+            padding: 16px;
+          }
+          .prelim-steps{
+            gap: 32px;
+            padding: 8px;
+          }
+          .initial-steps-container h5,
+          .methods-container h5,
+          .prelim-steps h5{
+            font-size: 32px;
+            line-height: 1.05;
+            margin-bottom: 18px;
+          }
+          .prelim-text p,
+          .what-need p,
+          .methods-container p{
+            font-size: 16px;
+            line-height: 1.5;
+          }
+          .methods-container{
+            gap: 16px;
+          }
+          .scanning-container,
+          .photography-container{
+            padding: 24px;
+          }
+          .methods-container img{
+            margin-bottom: 16px;
+          }
+          .scan-step-1-layout,
+          .scan-step-2-layout,
+          .scan-step-3-layout,
+          .scan-step-4-layout{
+            width: calc(100% - 32px);
+            margin: 24px 16px 16px;
+            gap: 16px;
+          }
+          .scan-step-1-container,
+          .scan-step-2-container,
+          .scan-step-3-container,
+          .scan-step-4-container{
+            padding: 12px;
+          }
+          .scan-step-1-text,
+          .scan-step-2-text,
+          .scan-step-3-text,
+          .scan-step-4-text{
+            padding: 8px;
+          }
+          .scan-step-1-text h4,
+          .scan-step-2-text h4,
+          .scan-step-3-text h4,
+          .scan-step-4-text h4{
+            font-size: 38px;
+            line-height: 1.05;
+            margin: 18px 0 12px;
+            overflow-wrap: anywhere;
+          }
+          .scan-step-1-text p,
+          .scan-step-2-text p,
+          .scan-step-3-text p,
+          .scan-step-4-text p{
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 16px 0 20px;
+          }
+          .scan-step-1-navigation-bottom,
+          .scan-step-2-navigation-bottom,
+          .scan-step-3-navigation-bottom,
+          .scan-step-4-navigation-bottom{
+            padding: 8px;
           }
         }
         .scan-step-1-navigation-bottom,
