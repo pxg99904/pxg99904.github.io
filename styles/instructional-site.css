@@ -107,7 +107,8 @@
           line-height: 1;
           min-height: 2em;
             color: #3c4044;
-            
+            overflow-wrap: break-word;
+            word-break: break-word;
         }
         h3,h5{
             margin-top: 20px;
@@ -208,15 +209,22 @@
         .prelim-text .method-item + .method-item{
           margin-top: -8px;
         }
-        @media (max-width: 700px){
+        @media (max-width: 900px){
           .prelim-steps{
-            flex-direction: column;
-          }
-          .methods-container{
             flex-direction: column;
           }
           .what-need{
             padding-top: 0;
+          }
+          .initial-steps-container h5,
+          .methods-container h5,
+          .prelim-steps h5{
+            font-size: 40px;
+          }
+        }
+        @media (max-width: 700px){
+          .methods-container{
+            flex-direction: column;
           }
         }
         .scan-step-1-layout,
