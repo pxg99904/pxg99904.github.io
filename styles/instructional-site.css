@@ -1,0 +1,287 @@
+    :root {
+      --icon-heading-gap: 45px;
+    }
+
+    h1, h2, h5{
+      font-family: "Instrument Serif", serif;
+    }
+ 
+    p, h3 {
+      font-family: "Encode Sans", sans-serif;
+    }
+
+    p {
+      color: lightslategray;
+    }
+
+        body {
+        margin: 0;
+        padding: 0;
+        background-color: #fff8e8;
+        }
+
+        header {
+        background-color: #c0663c;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 0 0 20px;
+        font-family: "Instrument Serif", serif;
+        }
+
+        .brand,
+        .brand:hover {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: inherit;
+        text-decoration: none;
+        }
+
+        .brand-logo {
+        width: 32px;
+        height: 32px;
+        object-fit: contain;
+        }
+
+        nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        }
+
+        nav li a {
+        display: block;
+        color: white;
+        padding: 25px 30px;
+        text-decoration: none;
+        font-family: "Encode Sans", sans-serif;
+        }
+
+        nav li:last-child a {
+        padding-right: 16px;
+        }
+
+        nav li a:hover {
+        background-color: #111111;
+        }
+
+        h1 {
+        color: #e6e6e6;
+        font-size: 24px;
+        margin: 0;
+        padding: 10px 0;
+        }
+        .top-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            margin-top: 50px;
+            margin-bottom: 100px;
+        }
+        .archive-text{
+            width: 70%;
+            box-sizing: border-box;
+            padding: 20px;
+            text-align: center;
+        }
+        .archive-text p{
+            font-size: 30px;
+            margin-top: 0;
+        }
+        h2{
+            font-size: 100px;
+          margin-bottom: 36px;
+            margin-top: 20px;
+            color: #3c4044;
+        }
+        h3{
+            font-size: 20px;
+          margin-bottom: 0px;
+          text-align: center;
+        }
+        h5{
+            font-size: 70px;
+          line-height: 1;
+          min-height: 2em;
+            color: #3c4044;
+            
+        }
+        h3,h5{
+            margin-top: 20px;
+        }
+        .initial-steps-container h5{
+            font-size: 60px;
+        }
+        .initial-steps-container h5,
+        .methods-container h5{
+            margin-top: 0;
+          min-height: 0;
+          margin-bottom: 40px;
+        }
+        .methods-container img,
+        .prelim-icons img{
+          display: block;
+          width: 40px;
+          height: 40px;
+          object-fit: contain;
+        }
+        .methods-container img{
+          margin-bottom: var(--icon-heading-gap);
+        }
+        .methods-container h5{
+          margin-bottom: 20px;
+          background-color: white;
+        }
+        .methods-container h5 + p{
+          margin-top: 0;
+        }
+        .methods-container p{
+          margin-bottom: 20px;
+        }
+        .initial-steps-container,
+        .scanning-container,
+        .photography-container{
+            min-height: 250px;
+            box-sizing: border-box;
+            padding: 24px;
+            border: 3px solid #c0663c;
+            border-radius: 10px;
+            background-color: white;
+        }
+        .initial-steps-container{
+          width: 80%;
+          margin: 40px auto;
+        }
+        .methods-container{
+          display: flex;
+          gap: 32px;
+          width: 80%;
+          margin: 40px auto;
+        }
+        .scanning-container,
+        .photography-container{
+          flex: 1;
+          min-width: 0;
+          padding: 84px 64px 64px;
+        }
+        .prelim-steps{
+            font-family: "Instrument Serif", serif;
+            display: flex;
+            gap: 80px;
+            padding: 40px;
+        }
+        .prelim-column,
+        .what-need{
+            flex: 1;
+            min-width: 0;
+        }
+        .prelim-column{
+          display: flex;
+          flex-direction: column;
+          gap: var(--icon-heading-gap);
+        }
+        .what-need{
+          padding-top: calc(60px + var(--icon-heading-gap));
+        }
+        .prelim-icons{
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          margin-top: 20px;
+          margin-bottom: 0px;
+        }
+        .prelim-text p,
+        .what-need p{
+          margin-top: 0;
+        }
+        .prelim-text .method-item + .method-item{
+          margin-top: -8px;
+        }
+        @media (max-width: 700px){
+          .prelim-steps{
+            flex-direction: column;
+          }
+          .methods-container{
+            flex-direction: column;
+          }
+          .what-need{
+            padding-top: 0;
+          }
+        }
+        .scan-step-1-layout{
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 32px;
+          width: calc(100% - 40px);
+          margin: 100px 20px;
+        }
+        .scan-step-1-container{
+          padding: 24px;
+          border: 3px solid #c0663c;
+          border-radius: 10px;
+          background-color: white;
+        }
+        .scan-step-1-images{
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+        }
+        .scan-step-1-image-placeholder{
+          flex: 1;
+          min-height: 0;
+          border: 3px solid #c0663c;
+          border-radius: 10px;
+          background-color: white;
+        }
+        .scan-step-1-text{
+          display: flex;
+          flex-direction: column;
+          align-items: stretch;
+          text-align: left;
+          padding: 24px;
+        }
+        .scan-step-1-text, h3{
+           color: lightslategray;
+        }
+        .scan-step-1-text h3{
+          text-align: center;
+        }
+        .scan-step-1-text h4{
+          margin: 30px 0 15px;
+          min-height: 0;
+          color: #3c4044;
+          font-family: "Instrument Serif", serif;
+          font-size: 60px;
+          line-height: 1;
+        }
+        .scan-step-1-text p{
+          margin-top: 30px;
+          margin-bottom: 40px;
+        }
+        .scan-step-icon{
+          display: block;
+          width: 40px;
+          height: 40px;
+          object-fit: contain;
+          margin-inline: auto;
+        }
+        .scan-step-1-navigation{
+          display: flex;
+          align-self: center;
+          gap: 12px;
+        }
+        @media (max-width: 700px){
+          .scan-step-1-layout{
+            grid-template-columns: 1fr;
+          }
+          .scan-step-1-container{
+            width: 100%;
+          }
+          .scan-step-1-image-placeholder{
+            flex: 0 0 auto;
+            aspect-ratio: 4 / 3;
+          }
+        }
