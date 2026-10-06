@@ -1,38 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<title>All Exercises</title>
     <style> 
-        a{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+        a{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-decoration: none;
+        }
         a:link{color: darkslategray;}
         a:visited{color: mediumpurple;}
         a:hover{background-color: moccasin;}
-        h1,h2 {font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: darkslategray; text-align: center;}
+        h1,h2 {font-size: 40px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: darkslategray; text-align: center;}
         ul {
             list-style: none;
             padding: 0;
             margin: 0 auto;
             width: fit-content;
             text-align: center;
+            font-size: 25px;
+           
         }
-        li { margin: 6px 0; 
+        li { margin: 6px 0;
+            
         }
-        h2{
-            font-size: xx-large;
+        h1{
+            margin-top: 0;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            width: 50%;
+            min-height: 45vh;
+            box-sizing: border-box;
+            border: 3px solid darkslategray;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .container + .container{
+            margin-top: 24px;
         }
     </style>
 </head>
 <body>
-    <h1>All Exercises</h1>
-    <ul>
-        <li><a href="exercises/exercise-1/index.html" target="_blank">Exercise 1</a></li>
-        <li><a href="exercises/exercise-2/index.html" target="_blank">Exercise 2</a></li>
-        <li><a href="exercises/exercise-3/index.html" target="_blank">Exercise 3</a></li>
-        <li><a href="exercises/exercise-4/index.html" target="_blank">Exercise 4</a></li>
-        <li><a href="exercises/exercise-5/index.html" target="_blank">Exercise 5</a></li>
-    </ul>
-    <h2>Projects</h2>
-    <ul>
-        <li><a href="projects/project%201/central-pa-tourism/index.html" target="_blank">Central Pa Tourism Site</a></li>
-    </ul>
+    <div class="container">
+        <h1>All Exercises</h1>
+        <ul>
+            <li><a href="exercises/exercise-1/index.html" target="_blank">Exercise 1</a></li>
+            <li><a href="exercises/exercise-2/index.html" target="_blank">Exercise 2</a></li>
+            <li><a href="exercises/exercise-3/index.html" target="_blank">Exercise 3</a></li>
+            <li><a href="exercises/exercise-4/index.html" target="_blank">Exercise 4</a></li>
+            <li><a href="exercises/exercise-5/index.html" target="_blank">Exercise 5</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <h2>Projects</h2>
+        <ul>
+            <li><a href="projects/project%201/central-pa-tourism/index.html" target="_blank">Central Pa Tourism Site</a></li>
+            <li><a href="projects/project 2/instructional-site.html" target="_blank">Instructional Site</a></li>
+        </ul>
+    </div>
 </body>
 </html>

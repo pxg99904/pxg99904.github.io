@@ -166,6 +166,14 @@
           flex: 1;
           min-width: 0;
           padding: 84px 64px 64px;
+          overflow-wrap: break-word;
+          word-break: break-word;
+        }
+        .scanning-container h5,
+        .photography-container h5{
+          max-width: 100%;
+          overflow-wrap: break-word;
+          word-break: break-word;
         }
         .prelim-steps{
             font-family: "Instrument Serif", serif;
@@ -211,45 +219,64 @@
             padding-top: 0;
           }
         }
-        .scan-step-1-layout{
+        .scan-step-1-layout,
+        .scan-step-2-layout,
+        .scan-step-3-layout,
+        .scan-step-4-layout{
           display: grid;
           grid-template-columns: repeat(2, minmax(0, 1fr));
           gap: 32px;
           width: calc(100% - 40px);
-          margin: 100px 20px;
+          margin: 68px 20px 20px;
         }
-        .scan-step-1-container{
+        .scan-step-1-container,
+        .scan-step-2-container,
+        .scan-step-3-container,
+        .scan-step-4-container{
           padding: 24px;
           border: 3px solid #c0663c;
           border-radius: 10px;
           background-color: white;
         }
-        .scan-step-1-images{
+        .scan-step-1-images,
+        .scan-step-2-images,
+        .scan-step-3-images,
+        .scan-step-4-images{
           display: flex;
           flex-direction: column;
           gap: 24px;
         }
-        .scan-step-1-image-placeholder{
+        .scan-step-1-image-placeholder,
+        .scan-step-2-image-placeholder,
+        .scan-step-3-image-placeholder,
+        .scan-step-4-image-placeholder{
           flex: 1;
           min-height: 0;
           border: 3px solid #c0663c;
           border-radius: 10px;
           background-color: white;
         }
-        .scan-step-1-text{
+        .scan-step-1-text,
+        .scan-step-2-text,
+        .scan-step-3-text,
+        .scan-step-4-text{
           display: flex;
           flex-direction: column;
           align-items: stretch;
           text-align: left;
           padding: 24px;
         }
-        .scan-step-1-text, h3{
-           color: lightslategray;
-        }
-        .scan-step-1-text h3{
+        .scan-step-1-text h3,
+        .scan-step-2-text h3,
+        .scan-step-3-text h3,
+        .scan-step-4-text h3{
+          color: lightslategray;
           text-align: center;
         }
-        .scan-step-1-text h4{
+        .scan-step-1-text h4,
+        .scan-step-2-text h4,
+        .scan-step-3-text h4,
+        .scan-step-4-text h4{
           margin: 30px 0 15px;
           min-height: 0;
           color: #3c4044;
@@ -257,7 +284,10 @@
           font-size: 60px;
           line-height: 1;
         }
-        .scan-step-1-text p{
+        .scan-step-1-text p,
+        .scan-step-2-text p,
+        .scan-step-3-text p,
+        .scan-step-4-text p{
           margin-top: 30px;
           margin-bottom: 40px;
         }
@@ -268,20 +298,47 @@
           object-fit: contain;
           margin-inline: auto;
         }
-        .scan-step-1-navigation{
+        .scan-step-1-navigation,
+        .scan-step-2-navigation,
+        .scan-step-3-navigation,
+        .scan-step-4-navigation{
           display: flex;
           align-self: center;
           gap: 12px;
         }
         @media (max-width: 700px){
-          .scan-step-1-layout{
+          .scan-step-1-layout,
+          .scan-step-2-layout,
+          .scan-step-3-layout,
+          .scan-step-4-layout{
             grid-template-columns: 1fr;
           }
-          .scan-step-1-container{
+          .scan-step-1-container,
+          .scan-step-2-container,
+          .scan-step-3-container,
+          .scan-step-4-container{
             width: 100%;
           }
-          .scan-step-1-image-placeholder{
+          .scan-step-1-image-placeholder,
+          .scan-step-2-image-placeholder,
+          .scan-step-3-image-placeholder,
+          .scan-step-4-image-placeholder{
             flex: 0 0 auto;
             aspect-ratio: 4 / 3;
           }
+        }
+        .scan-step-1-navigation-bottom,
+        .scan-step-2-navigation-bottom,
+        .scan-step-3-navigation-bottom,
+        .scan-step-4-navigation-bottom{
+          grid-column: 1 / -1;
+          display: flex;
+          justify-content: center;
+          gap: 12px;
+          margin-top: 8px;
+          margin-bottom: 0;
+          padding: 12px 24px;
+          font-family: "Encode Sans", sans-serif;
+          text-decoration: none;
+          text-align: center;
         }
