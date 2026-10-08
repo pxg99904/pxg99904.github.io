@@ -414,7 +414,12 @@
             margin: 16px 0 20px;
           }
           :is(.scan-step-1-navigation-bottom, .scan-step-2-navigation-bottom, .scan-step-3-navigation-bottom, .scan-step-4-navigation-bottom){
+            gap: 4px;
             padding: 8px;
+          }
+          :is(.scan-step-1-navigation-bottom, .scan-step-2-navigation-bottom, .scan-step-3-navigation-bottom, .scan-step-4-navigation-bottom) > .btn{
+            padding-right: 6px;
+            padding-left: 6px;
           }
         }
         :is(.scan-step-1-navigation-bottom, .scan-step-2-navigation-bottom, .scan-step-3-navigation-bottom, .scan-step-4-navigation-bottom){
