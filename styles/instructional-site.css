@@ -60,15 +60,16 @@
         nav li a,
         nav li a.nav-link {
         display: block;
+        align-items: center;
         color: white;
-        padding: 25px 30px;
+        padding: 25px 40px;
         text-decoration: none;
         font-family: "Encode Sans", sans-serif;
         }
 
         nav li:last-child a,
         nav li:last-child a.nav-link {
-        padding-right: 16px;
+        padding-right: 40px;
         }
 
         nav li a:hover {
@@ -338,7 +339,7 @@
           }
           nav li:last-child a,
           nav li:last-child a.nav-link{
-            padding-right: 8px;
+            padding-right: 16px;
           }
           .top-container{
             margin-top: 24px;
@@ -435,7 +436,8 @@
           text-align: center;
         }
         .nav-link.active {
-         color: #111111;
+         background-color: #742f0e;
+         color: #fff;
         font-weight: bold;
         }
         .step-link-active {
