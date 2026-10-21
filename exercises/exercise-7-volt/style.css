@@ -1,0 +1,173 @@
+  @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,800&family=DM+Sans:wght@400;500;600;700&display=swap");
+
+  :root {
+  --ink: #12110f;
+  --paper: #f3f0e9;
+  --orange: #ff5c00;
+  --orange-light: #ff8a00;
+  --blue: #bfe9ff;
+  --blue-strong: #1564ff;
+  --red: #ff4c42;
+  --red-dark: #9a1512;
+  --white: #fffdf8;
+  --display: "Barlow Condensed", sans-serif;
+  --body: "DM Sans", sans-serif;
+}
+
+.navbar {
+  padding: 0.75rem 1.5rem;
+}
+
+.footer-nav {
+  background-color: #000;
+  color: var(--white);
+}
+
+.footer-nav .container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.logo-lockup {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-right: 1.5rem;
+}
+
+.logo-v {
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+}
+
+.logo-volt {
+  width: auto;
+  height: 1.5rem;
+  object-fit: contain;
+}
+
+.volt-background {
+  min-height: 400px;
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 8%;
+  background-color: black;
+  background-image: url("./images/background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.volt-text {
+  min-width: 0;
+}
+
+.volt-text img,
+.volt-image img {
+  display: block;
+  width: 80%;
+  height: auto;
+
+}
+
+.volt-image {
+  min-width: 200px;
+}
+
+.under-orange-bar {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: auto;
+  background-color: var(--orange);
+  font-family: var(--display);
+  color: var(--white);
+}
+
+.under-orange-bar p {
+  width: max-content;
+  flex-shrink: 0;
+  margin: 0;
+  white-space: nowrap;
+  text-align: center;
+  word-spacing: 20px;
+  font-size: 20px;
+}
+
+.bottom-section {
+  width: 100%;
+  padding-bottom: 3rem;
+  background-color: var(--white);
+  color: var(--ink);
+}
+
+.bottom-text,
+.bottom-image {
+  width: 90%;
+  margin-inline: auto;
+}
+
+.bottom-text {
+  padding: 3rem 0 1rem;
+}
+
+.bottom-text h2 {
+  margin-bottom: 1rem;
+  font-family: var(--display);
+}
+
+.bottom-text p {
+  max-width: 50rem;
+  margin: 0;
+  font-family: var(--body);
+  line-height: 1.6;
+}
+
+.bottom-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.every-mood img {
+  display: block;
+  width: 100%;
+  max-width: 35rem;
+  height: auto;
+  margin: 0;
+}
+
+.every-mood {
+  display: grid;
+  grid-template-columns: 22.222% minmax(0, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+
+.every-mood p {
+  max-width: none;
+  align-self: end;
+  text-align: right;
+  text-color: var(--ink);
+  font-family: var(--body);
+}
+
+.footer-nav img {
+  display: block;
+  width: auto;
+  min-height: 70px;
+}
+
+.footer-nav p {
+  text-align: right;
+  margin: 0;
+  color: var(--white);
+  font-family: var(--body);
+}
