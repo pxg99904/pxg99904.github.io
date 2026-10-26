@@ -26,6 +26,12 @@
         padding: 0;
         }
 
+        body.info-page {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        }
+
         #carouselStackedIndicators {
         width: 80%;
         margin-inline: auto;
@@ -54,7 +60,16 @@
         text-align: center;
         }
 
-        main.container .row {
+        main.info-content {
+        flex: 1;
+        padding-top: 75px;
+        }
+
+        main.info-content .row {
+        width: 100%;
+        }
+
+        main.info-content .row {
         justify-content: center;
         }
 
