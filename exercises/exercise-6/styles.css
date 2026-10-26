@@ -26,6 +26,38 @@
         padding: 0;
         }
 
+        #carouselStackedIndicators {
+        width: 80%;
+        margin-inline: auto;
+        }
+
+        .carousel-columns {
+        width: 80%;
+        margin: 1rem auto 0;
+        }
+
+        .secondary-page-button {
+        display: block;
+        width: fit-content;
+        margin: 1rem auto;
+        }
+
+        #carouselStackedIndicators .carousel-item img {
+        height: 500px;
+        object-fit: cover;
+        }
+
+        main.container {
+        width: 80%;
+        max-width: none;
+        padding-inline: 0;
+        text-align: center;
+        }
+
+        main.container .row {
+        justify-content: center;
+        }
+
         header {
         background-color: #004089;
         display: flex;
@@ -44,10 +76,10 @@
         text-decoration: none;
         }
 
-        .brand-logo {
-        width: 32px;
-        height: 32px;
-        object-fit: contain;
+        header .brand-logo {
+        width: 64px;
+        height: auto;
+        flex-shrink: 0;
         }
 
         nav ul {
