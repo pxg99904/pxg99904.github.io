@@ -1,0 +1,77 @@
+:root {
+  --primary-color: #77411b;
+  --secondary-color: #C46928;
+  --light-mint: #d9e8d2;
+  --dark-navy: #0d343d;
+  --med-orange: #c46928;
+  --cream: #fff2cd;
+
+ 
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-logo {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  padding: 25px 30px;
+  text-decoration: none;
+  font-family: "Maiden Orange", sans-serif;
+}
+
+.brand h1 {
+  color: white;
+  font-size: 25px;
+  margin: 0;
+  padding: 10px 0;
+  font-family: "Gill Sans", sans-serif;
+  font-weight: 100;
+}
+
+nav li a:hover {
+  background-color: var(--secondary-color);
+}
+
+.top-hero{
+  width: 100%;
+  display: block;
+  flex-direction: row;
+}
+.hero-text {
+  padding: 60px 0;
+  font-family: "playfair Display", serif;
+  width: 50%;
+}
+.hero-img {
+  width: 50%;
+  display: block;
+}
