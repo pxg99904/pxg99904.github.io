@@ -197,10 +197,10 @@ nav li a.active {
   top: 50%;
 }
 .decoration-bar p::before {
-  left: 33.333%;
+  left: calc(33.333% - 30px);
 }
 .decoration-bar p::after {
-  left: 66.666%;
+  left: calc(66.666% + 30px);
 }
 .decoration-bar span:first-child {
   text-align: left;
