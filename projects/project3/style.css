@@ -161,6 +161,10 @@ nav li a.active {
   color: var(--light-mint);
 }
 
+.hero-text .button {
+  border: 2px solid var(--dark-navy);
+}
+
 .decoration-bar {
   width: 100%;
   box-sizing: border-box;
