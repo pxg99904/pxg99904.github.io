@@ -140,6 +140,9 @@ nav li a.active {
   display: block;
   width: 100%;
 }
+.home-hero-img img {
+  width: calc(100% + 20px);
+}
 
 .button{
   display: inline-flex;
