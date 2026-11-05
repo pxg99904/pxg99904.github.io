@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brews & Bonds - Home</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./nav.js" defer></script>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Maiden+Orange&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -21,7 +22,10 @@
       <h1>BREWS &amp; BONDS</h1>
     </a>
   </div>
-  <nav>
+  <button class="navigation-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation menu">
+    <span></span><span></span><span></span>
+  </button>
+  <nav id="primary-navigation">
     <ul>
       <li><a href="./menu.html">Menu</a></li>
       <li><a href="./location.html">Location</a></li>
@@ -72,7 +76,6 @@
                     <p><strong class="event-title">Coffee Tasting Workshop</strong><br>Learn about coffee brewing methods and taste specialty coffees.<br><span class="event-time">6:00 PM - 7:30 PM</span></p>
                     </div>
                     </div>
-                    <div class="link"><a class="button" href="./what-we-do.html">View All Events</a></div>
                 </div>
                     <div class="card">
                     <div class="img-holder">
@@ -85,6 +88,7 @@
                     </div>
                     </div>
                 </div>
+                <div class="events-link"><a class="button" href="./what-we-do.html">View All Events</a></div>
         </div>
         
 </div>
