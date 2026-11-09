@@ -4,7 +4,16 @@ document.querySelectorAll("[data-tabs]").forEach((root, rootIndex) => {
     const triggers = [...root.querySelectorAll(".tabs__trigger")];
     const panels = [...root.querySelectorAll(".tabs__panel")];
     const headings = [...root.querySelectorAll(".tabs__heading")];
-    let active = Math.max(headings.findIndex((heading) => `#${heading.id}` === location.hash), 0);
+
+    function indexFromHash() {
+        const targetId = decodeURIComponent(location.hash.slice(1));
+        const target = document.getElementById(targetId);
+        return headings.findIndex((heading, i) =>
+            heading.id === targetId || (target && panels[i].contains(target)),
+        );
+    }
+
+    let active = Math.max(indexFromHash(), 0);
     let collapsed = false;
 
     const list = document.createElement("div");
@@ -58,10 +67,6 @@ document.querySelectorAll("[data-tabs]").forEach((root, rootIndex) => {
         return `#${headings[i].id}`;
     }
 
-    function indexFromHash() {
-        return headings.findIndex((_, i) => hashFor(i) === location.hash);
-    }
-
     function updateUrl(hash, { replace = false } = {}) {
         if (hash === location.hash) return;
         const url = hash || location.pathname + location.search;
@@ -72,7 +77,10 @@ document.querySelectorAll("[data-tabs]").forEach((root, rootIndex) => {
         const animations = closing.getAnimations();
         Promise.allSettled(animations.map((animation) => animation.finished)).then(() => {
             if (active !== i || collapsed) return;
-            const target = accordionQuery.matches ? triggers[i] : list;
+            const hashTarget = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+            const target = hashTarget && panels[i].contains(hashTarget)
+                ? hashTarget
+                : accordionQuery.matches ? triggers[i] : list;
             const { top, bottom } = target.getBoundingClientRect();
             if (top >= 0 && bottom <= window.innerHeight) return;
             target.scrollIntoView({
