@@ -134,6 +134,10 @@ nav li a.active {
 .hero-text h2 {
   margin-bottom: 0.75em;
 }
+.home-hero-text h2 {
+  font-size: calc(1.5em + 10px);
+  margin-bottom: calc(0.75em - 7.5px);
+}
 .hero-secondary {
   color: var(--secondary-color);
 }
