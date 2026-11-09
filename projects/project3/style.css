@@ -833,6 +833,10 @@ nav li a.active {
   padding: clamp(2rem, 5vw, 4rem) var(--page-gutter);
 }
 
+.menu-document .menu-page {
+  padding-top: calc(clamp(2rem, 5vw, 4rem) - 25px);
+}
+
 .menu-document,
 .events-document {
   display: flex;
@@ -1122,6 +1126,10 @@ nav li a.active {
   .events-document .events-page {
     max-width: 1440px;
     padding-block: clamp(2.4rem, 6vw, 4.8rem);
+  }
+
+  .menu-document .menu-page {
+    padding-top: calc(clamp(2.4rem, 6vw, 4.8rem) - 25px);
   }
 
   .events-document .events-page {
