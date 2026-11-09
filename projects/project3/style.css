@@ -6,6 +6,7 @@
   --med-orange: #c46928;
   --cream: #fff2cd;
   --page-gutter: 40px;
+  --event-image-inset: 30px;
 
  
 }
@@ -223,14 +224,14 @@ nav li a.active {
 }
 .decoration-bar span:first-child {
   text-align: left;
-  padding-left: 30px;
+  padding-left: var(--event-image-inset);
 }
 .decoration-bar span:nth-child(3) {
   text-align: center;
 }
 .decoration-bar span:last-child {
   text-align: right;
-  padding-right: 30px;
+  padding-right: var(--event-image-inset);
 }
 
 .weekly-events-container {
@@ -289,13 +290,13 @@ nav li a.active {
 }
 
 .weekly-events-cards > .event-card-link:first-child .img-holder {
-  width: calc(100% - 30px);
-  margin-left: 30px;
+  width: calc(100% - var(--event-image-inset));
+  margin-left: var(--event-image-inset);
 }
 
 .weekly-events-cards > .event-card-link:nth-child(3) .img-holder {
-  width: calc(100% - 30px);
-  margin-right: 30px;
+  width: calc(100% - var(--event-image-inset));
+  margin-right: var(--event-image-inset);
 }
 
 .img-holder img {
@@ -529,6 +530,11 @@ nav li a.active {
     align-items: center;
   }
 
+  .decoration-bar p {
+    width: min(100%, 520px);
+    margin: 0 auto;
+  }
+
   .card {
     width: min(100%, 520px);
   }
@@ -590,17 +596,6 @@ nav li a.active {
     top: 70%;
   }
 
-  .decoration-bar span:first-child,
-  .decoration-bar span:last-child {
-    padding: 0;
-  }
-
-  .decoration-bar span:first-child,
-  .decoration-bar span:nth-child(3),
-  .decoration-bar span:last-child {
-    text-align: center;
-  }
-
   .brand-link {
     gap: 8px;
   }
@@ -622,14 +617,6 @@ nav li a.active {
   .decoration-bar {
     padding: 14px var(--page-gutter);
     font-size: 0.75rem;
-  }
-
-  .decoration-bar span:first-child {
-    padding-left: 0;
-  }
-
-  .decoration-bar span:last-child {
-    padding-right: 0;
   }
 
   .decoration-bar p::before,
