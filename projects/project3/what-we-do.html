@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>What We Do - Brews &amp; Bonds</title>
+    <title>Events - Brews &amp; Bonds</title>
     <link rel="stylesheet" href="./style.css">
     <script src="./nav.js" defer></script>
+    <script src="./tabs.js" defer></script>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -14,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="events-document">
     <header>
         <div class="brand">
             <a class="brand-link" href="./index.html" aria-label="Brews &amp; Bonds home">
@@ -35,8 +36,190 @@
             </ul>
         </nav>
     </header>
+    <main class="menu-page events-page">
+        <div class="menu-header">
+            <h2>Weekly Events</h2>
+            <p>Join us throughout the week for coffee, community, and good company.</p>
+        </div>
+        <div class="tabs" data-tabs data-tabs-label="Events by day">
+            <h2 class="tabs__heading" id="monday">
+                <span class="tabs__label">Monday</span>
+                <button class="tabs__trigger" type="button">Monday</button>
+            </h2>
+            <section class="tabs__panel">
+                <div class="tabs__panel-inner events-split">
+                    <ul class="event-items">
+                        <li class="event-item">
+                            <img class="event-item__image" src="./images/12-yoga.avif" alt="Yoga class in progress">
+                            <h3>Morning Yoga Class</h3>
+                            <p>Start your week with a relaxing yoga session.</p>
+                            <p class="event-item__time"><time>8:00 AM</time> <span aria-hidden="true">–</span> <time>9:00 AM</time></p>
+                        </li>
+                    </ul>
+                    <div class="events-split-side">
+                        <ul class="event-items">
+                            <li class="event-item">
+                                <h3>Live Acoustic Music</h3>
+                                <p>Enjoy soulful acoustic performances by local artists.</p>
+                                <p class="event-item__time"><time>7:00 PM</time> <span aria-hidden="true">–</span> <time>9:00 PM</time></p>
+                            </li>
+                        </ul>
+                        <p class="events-note">Please note that specific event dates and times may vary. Check with the coffee shop for the most up-to-date information and any additional events they may offer.</p>
+                    </div>
+                </div>
+            </section>
+
+            <h2 class="tabs__heading" id="tuesday">
+                <span class="tabs__label">Tuesday</span>
+                <button class="tabs__trigger" type="button">Tuesday</button>
+            </h2>
+            <section class="tabs__panel">
+                <div class="tabs__panel-inner events-split">
+                    <ul class="event-items">
+                        <li class="event-item">
+                            <img class="event-item__image" src="./images/05-beans.avif" alt="Coffee beans for the tasting workshop">
+                            <h3>Coffee Tasting Workshop</h3>
+                            <p>Learn about different coffee brewing methods and taste various specialty coffees.</p>
+                            <p class="event-item__time"><time>6:00 PM</time> <span aria-hidden="true">–</span> <time>7:30 PM</time></p>
+                        </li>
+                    </ul>
+                    <div class="events-split-side">
+                        <ul class="event-items">
+                            <li class="event-item">
+                                <h3>Open Mic Night</h3>
+                                <p>Showcase your talent or enjoy the performances of local musicians, poets, and comedians.</p>
+                                <p class="event-item__time"><time>8:00 PM</time> <span aria-hidden="true">–</span> <time>10:00 PM</time></p>
+                            </li>
+                        </ul>
+                        <p class="events-note">Please note that specific event dates and times may vary. Check with the coffee shop for the most up-to-date information and any additional events they may offer.</p>
+                    </div>
+                </div>
+            </section>
+
+            <h2 class="tabs__heading" id="wednesday">
+                <span class="tabs__label">Wednesday</span>
+                <button class="tabs__trigger" type="button">Wednesday</button>
+            </h2>
+            <section class="tabs__panel">
+                <div class="tabs__panel-inner events-split">
+                    <ul class="event-items">
+                        <li class="event-item">
+                            <img class="event-item__image" src="./images/13-art-exhibit.avif" alt="Guests viewing artwork at a cafe art exhibition">
+                            <h3>Art Exhibition</h3>
+                            <p>Explore the works of local artists displayed throughout the coffee shop.</p>
+                            <p class="event-item__time">All day</p>
+                        </li>
+                    </ul>
+                    <div class="events-split-side">
+                        <ul class="event-items">
+                            <li class="event-item">
+                                <h3>Trivia Night</h3>
+                                <p>Test your knowledge and compete with friends in a fun-filled trivia competition.</p>
+                                <p class="event-item__time"><time>7:00 PM</time> <span aria-hidden="true">–</span> <time>9:00 PM</time></p>
+                            </li>
+                        </ul>
+                        <p class="events-note">Please note that specific event dates and times may vary. Check with the coffee shop for the most up-to-date information and any additional events they may offer.</p>
+                    </div>
+                </div>
+            </section>
+
+            <h2 class="tabs__heading" id="thursday">
+                <span class="tabs__label">Thursday</span>
+                <button class="tabs__trigger" type="button">Thursday</button>
+            </h2>
+            <section class="tabs__panel">
+                <div class="tabs__panel-inner events-split">
+                    <ul class="event-items">
+                        <li class="event-item">
+                            <img class="event-item__image" src="./images/10-baked-goods.avif" alt="Freshly baked pastries prepared for the cooking class">
+                            <h3>Cooking Class</h3>
+                            <p>Join our skilled chef and learn to prepare delicious desserts. Limited spots available, reservations required.</p>
+                            <p class="event-item__time"><time>5:00 PM</time> <span aria-hidden="true">–</span> <time>7:00 PM</time></p>
+                        </li>
+                    </ul>
+                    <div class="events-split-side">
+                        <ul class="event-items">
+                            <li class="event-item">
+                                <h3>Board Game Night</h3>
+                                <p>Gather with friends and enjoy a variety of board games while sipping your favorite drinks.</p>
+                                <p class="event-item__time"><time>6:00 PM</time> <span aria-hidden="true">–</span> <time>9:00 PM</time></p>
+                            </li>
+                        </ul>
+                        <p class="events-note">Please note that specific event dates and times may vary. Check with the coffee shop for the most up-to-date information and any additional events they may offer.</p>
+                    </div>
+                </div>
+            </section>
+
+            <h2 class="tabs__heading" id="friday">
+                <span class="tabs__label">Friday</span>
+                <button class="tabs__trigger" type="button">Friday</button>
+            </h2>
+            <section class="tabs__panel">
+                <div class="tabs__panel-inner events-friday">
+                    <ul class="event-items">
+                        <li class="event-item">
+                            <img class="event-item__image" src="./images/06-interior-wide.avif" alt="Interior of the cafe set for a live jazz performance">
+                            <h3>Live Jazz Band</h3>
+                            <p>Relax and unwind with the smooth tunes of a live jazz band.</p>
+                            <p class="event-item__time"><time>7:30 PM</time> <span aria-hidden="true">–</span> <time>9:30 PM</time></p>
+                        </li>
+                    </ul>
+                    <p class="events-note">Please note that specific event dates and times may vary. Check with the coffee shop for the most up-to-date information and any additional events they may offer.</p>
+                </div>
+            </section>
+
+            <h2 class="tabs__heading" id="saturday">
+                <span class="tabs__label">Saturday</span>
+                <button class="tabs__trigger" type="button">Saturday</button>
+            </h2>
+            <section class="tabs__panel">
+                <div class="tabs__panel-inner">
+                    <ul class="event-items">
+                        <li class="event-item">
+                            <h3>Family Day</h3>
+                            <p>Bring your kids for a special day of face painting, storytelling, and fun activities.</p>
+                            <p class="event-item__time"><time>10:00 AM</time> <span aria-hidden="true">–</span> <time>12:00 PM</time></p>
+                        </li>
+                        <li class="event-item">
+                            <h3>Poetry Slam</h3>
+                            <p>Express your creativity or listen to passionate poets share their work during our poetry slam event.</p>
+                            <p class="event-item__time"><time>7:00 PM</time> <span aria-hidden="true">–</span> <time>9:00 PM</time></p>
+                        </li>
+                    </ul>
+                    <p class="events-note">Please note that specific event dates and times may vary. Check with the coffee shop for the most up-to-date information and any additional events they may offer.</p>
+                </div>
+            </section>
+
+            <h2 class="tabs__heading" id="sunday">
+                <span class="tabs__label">Sunday</span>
+                <button class="tabs__trigger" type="button">Sunday</button>
+            </h2>
+            <section class="tabs__panel">
+                <div class="tabs__panel-inner events-split">
+                    <ul class="event-items">
+                        <li class="event-item">
+                            <img class="event-item__image" src="./images/11-salad-sandwich.avif" alt="Salad and sandwich served for Sunday brunch">
+                            <h3>Sunday Brunch</h3>
+                            <p>Indulge in a delicious brunch menu accompanied by live acoustic music.</p>
+                            <p class="event-item__time"><time>10:00 AM</time> <span aria-hidden="true">–</span> <time>2:00 PM</time></p>
+                        </li>
+                    </ul>
+                    <div class="events-split-side">
+                        <ul class="event-items">
+                            <li class="event-item">
+                                <h3>Book Club Meeting</h3>
+                                <p>Discuss the latest book selection with fellow book enthusiasts over a cup of coffee.</p>
+                                <p class="event-item__time"><time>3:00 PM</time> <span aria-hidden="true">–</span> <time>4:30 PM</time></p>
+                            </li>
+                        </ul>
+                        <p class="events-note">Please note that specific event dates and times may vary. Check with the coffee shop for the most up-to-date information and any additional events they may offer.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
     <div class="footer">
-        <img src="./images/footer.svg" alt="Brews & Bonds footer">
+        <img src="./images/footer.svg" alt="Brews &amp; Bonds footer">
     </div>
 </body>
 </html>

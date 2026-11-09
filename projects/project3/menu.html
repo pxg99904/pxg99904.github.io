@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu - Brews & Bonds</title>
+    <title>Menu - Brews &amp; Bonds</title>
     <link rel="stylesheet" href="./style.css">
     <script src="./nav.js" defer></script>
+    <script src="./tabs.js" defer></script>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -14,29 +15,190 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="menu-document">
     <header>
-  <div class="brand">
-    <a class="brand-link" href="./index.html" aria-label="Brews & Bonds home">
-      <img class="brand-logo" src="./images/favicon_io/android-chrome-192x192.png" alt="">
-      <h1>BREWS &amp; BONDS</h1>
-    </a>
-  </div>
-  <button class="navigation-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation menu">
-    <span></span><span></span><span></span>
-  </button>
-  <nav id="primary-navigation">
-    <ul>
-      <li><a href="./menu.html" class="active" aria-current="page">Menu</a></li>
-      <li><a href="./location.html">Location</a></li>
-      <li><a href="./what-we-do.html">What We Do</a></li>
-      <li><a href="./who-we-are.html">Who We Are</a></li>
-      <li><a href="./contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-<div class="footer">
-    <img src="./images/footer.svg" alt="Brews & Bonds footer">
-</div>
+        <div class="brand">
+            <a class="brand-link" href="./index.html" aria-label="Brews &amp; Bonds home">
+                <img class="brand-logo" src="./images/favicon_io/android-chrome-192x192.png" alt="">
+                <h1>BREWS &amp; BONDS</h1>
+            </a>
+        </div>
+        <button class="navigation-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation menu">
+            <span></span><span></span><span></span>
+        </button>
+        <nav id="primary-navigation">
+            <ul>
+                <li><a href="./menu.html" class="active" aria-current="page">Menu</a></li>
+                <li><a href="./location.html">Location</a></li>
+                <li><a href="./what-we-do.html">What We Do</a></li>
+                <li><a href="./who-we-are.html">Who We Are</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="menu-page">
+        <div class="menu-header">
+            <h2>Our Menu</h2>
+            <p>Find a new favorite, enjoy a familiar classic, and stay awhile.</p>
+        </div>
+        <div class="tabs" data-tabs data-tabs-label="Menu categories">
+            <h2 class="tabs__heading" id="coffee">
+                <span class="tabs__label">Coffee</span>
+                <button class="tabs__trigger" type="button">Coffee</button>
+            </h2>
+            <section class="tabs__panel">
+                <div class="tabs__panel-inner">
+                    <h3 class="menu-subheading">Coffee</h3>
+                    <div class="menu-gallery">
+                        <img src="./images/14-coffee-art-cup" alt="Coffee cup with latte art">
+                        <img src="./images/07-pour.avif" alt="Coffee being poured">
+                    </div>
+                    <ul class="menu-items">
+                        <li class="menu-item">
+                            <h3>Iced Coffee <span class="menu-item__price">$4.00</span></h3>
+                        </li>
+                        <li class="menu-item">
+                            <h3>Cold Brew <span class="menu-item__price">$4.50</span></h3>
+                        </li>
+                        <li class="menu-item">
+                            <h3>Frappuccino <span class="menu-item__price">$5.00</span></h3>
+                        </li>
+                        <li class="menu-item">
+                            <h3>Espresso <span class="menu-item__price">$2.50</span></h3>
+                        </li>
+                        <li class="menu-item">
+                            <h3>Americano <span class="menu-item__price">$3.00</span></h3>
+                        </li>
+                        <li class="menu-item">
+                            <h3>Latte <span class="menu-item__price">$4.00</span></h3>
+                        </li>
+                        <li class="menu-item">
+                            <h3>Cappuccino <span class="menu-item__price">$4.00</span></h3>
+                        </li>
+                        <li class="menu-item">
+                            <h3>Mocha <span class="menu-item__price">$4.50</span></h3>
+                        </li>
+                        <li class="menu-item">
+                            <h3>Macchiato <span class="menu-item__price">$4.50</span></h3>
+                        </li>
+                        <li class="menu-item">
+                            <h3>Flat White <span class="menu-item__price">$4.50</span></h3>
+                        </li>
+                    </ul>
+                    <div class="menu-gallery coffee-beans-gallery">
+                        <img src="./images/05-beans.avif" alt="Coffee beans ready to be ground">
+                    </div>
+                </div>
+            </section>
+
+            <h2 class="tabs__heading" id="tea">
+                <span class="tabs__label">Tea &amp; More</span>
+                <button class="tabs__trigger" type="button">Tea &amp; More</button>
+            </h2>
+            <section class="tabs__panel">
+                <div class="tabs__panel-inner">
+                    <div class="menu-gallery">
+                        <img src="./images/08-tea.avif" alt="Tea being prepared">
+                        <img src="./images/09-tea-set.avif" alt="Tea set">
+                    </div>
+                    <h3 class="menu-subheading">Tea Selection <span class="menu-item__price">$3.00</span></h3>
+                    <ul class="menu-items">
+                        <li class="menu-item"><h3>Earl Grey</h3></li>
+                        <li class="menu-item"><h3>English Breakfast</h3></li>
+                        <li class="menu-item"><h3>Green Tea</h3></li>
+                        <li class="menu-item"><h3>Jasmine Tea</h3></li>
+                        <li class="menu-item"><h3>Chamomile Tea</h3></li>
+                        <li class="menu-item"><h3>Peppermint Tea</h3></li>
+                        <li class="menu-item"><h3>Rooibos Tea</h3></li>
+                        <li class="menu-item"><h3>Matcha Tea</h3></li>
+                        <li class="menu-item"><h3>Oolong Tea</h3></li>
+                        <li class="menu-item"><h3>White Tea</h3></li>
+                        <li class="menu-item"><h3>Herbal Blend <span class="menu-item__note">(e.g., hibiscus, ginger, lemongrass)</span></h3></li>
+                        <li class="menu-item"><h3>Chai Tea</h3></li>
+                        <li class="menu-item"><h3>Darjeeling Tea</h3></li>
+                        <li class="menu-item"><h3>Assam Tea</h3></li>
+                        <li class="menu-item"><h3>Sencha Tea</h3></li>
+                        <li class="menu-item"><h3>Genmaicha Tea</h3></li>
+                        <li class="menu-item"><h3>Pu-erh Tea</h3></li>
+                        <li class="menu-item"><h3>Lemon Verbena Tea</h3></li>
+                        <li class="menu-item"><h3>Mint Tea</h3></li>
+                        <li class="menu-item"><h3>Berry Infusion <span class="menu-item__note">(e.g., raspberry, strawberry)</span></h3></li>
+                        <li class="menu-item">
+                            <h3>Matcha Latte <span class="menu-item__price">$4.50</span></h3>
+                        </li>
+                        <li class="menu-item">
+                            <h3>Herbal Tea</h3>
+                        </li>
+                        <li class="menu-item">
+                            <h3>Chai Tea Latte <span class="menu-item__price">$4.50</span></h3>
+                        </li>
+                        <li class="menu-item">
+                            <h3>Iced Tea <span class="menu-item__price">$3.50</span></h3>
+                        </li>
+                    </ul>
+                    <h3 class="menu-subheading">&amp; More</h3>
+                    <ul class="menu-items">
+                        <li class="menu-item">
+                            <h3>Hot Chocolate <span class="menu-item__price">$3.50</span></h3>
+                        </li>
+                        <li class="menu-item">
+                            <h3>Smoothie <span class="menu-item__price">$5.00</span></h3>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <h2 class="tabs__heading" id="bakery">
+                <span class="tabs__label">Bakery &amp; Food</span>
+                <button class="tabs__trigger" type="button">Bakery &amp; Food</button>
+            </h2>
+            <section class="tabs__panel">
+                <div class="tabs__panel-inner">
+                    <div class="menu-gallery">
+                        <img src="./images/10-baked-goods.avif" alt="Freshly baked goods">
+                        <img src="./images/11-salad-sandwich.avif" alt="Sandwich and salad">
+                    </div>
+                    <h3 class="menu-subheading">Baked Goods</h3>
+                    <ul class="menu-items">
+                        <li class="menu-item">
+                            <h3>Croissant <span class="menu-item__price">$2.50</span></h3>
+                        </li>
+                        <li class="menu-item">
+                            <h3>Bagel <span class="menu-item__price">$3.00</span></h3>
+                        </li>
+                        <li class="menu-item">
+                            <h3>Muffin <span class="menu-item__price">$2.50</span></h3>
+                        </li>
+                        <li class="menu-item">
+                            <h3>Scone <span class="menu-item__price">$3.00</span></h3>
+                        </li>
+                    </ul>
+                    <h3 class="menu-subheading">Food</h3>
+                    <ul class="menu-items">
+                        <li class="menu-item">
+                            <h3>Sandwich <span class="menu-item__price">$6.00</span></h3>
+                            <p>(e.g., ham and cheese, turkey and avocado)</p>
+                        </li>
+                        <li class="menu-item">
+                            <h3>Salad <span class="menu-item__price">$7.50</span></h3>
+                            <p>(e.g., chicken Caesar, Greek)</p>
+                        </li>
+                        <li class="menu-item">
+                            <h3>Quiche <span class="menu-item__price">$5.50</span></h3>
+                        </li>
+                        <li class="menu-item">
+                            <h3>Soup of the Day <span class="menu-item__price">$4.50</span></h3>
+                        </li>
+                        <li class="menu-item">
+                            <h3>Fruit Parfait <span class="menu-item__price">$4.50</span></h3>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+    <div class="footer">
+        <img src="./images/footer.svg" alt="Brews &amp; Bonds footer">
+    </div>
 </body>
 </html>
